@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- <style>
+     </style> -->
+
+</head>
+
+<body id="home">
+  <div id="header">
+
+    <div class="icon">
+      <h2 class="logo" >Rancho</h2>
+    </div>
+    <ul>
+      <li><a href="#home" >Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Menu">Menu</a></li>
+      <li><a href="#Special">Special</a></li>
+      <li><a href="#Event">Event</a></li>
+      <li><a href="#cook">Cheif</a></li>
+      <li><a href="#Gallery">Gallery</a></li>
+      <li><a href="#Table">Book A Table</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#Table"><button class="btn">Book A Table</button></a></li>
+
+    </ul>
+
+
+
+  </div>
+<!-- -------Nabar Ending------- -->
+
+
+
+  <div class="slider">
+    <div id="figure">
+      <img src="gallery-1.jpg">
+      <!-- Slider Center Text -->
+
+      <div class="imagehead">SHAHAJAJ <span style="font-family:'Times New Roman', Times, serif; color:white;"> RESTURENT</span></div>
+      <figcaption class="imagea"> lets do something Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate quos ratione
+         vero illo voluptatibus exercitationem molestias ea maiores 
+        ab ducimus repellat, unde eveniet animi, eum esse earum! Odio, accusamus.</figcaption>
+        <div class="imagebutton"><button class="slidea"><a href="#Menu" >OUR MENU</a></button><button class="slideb"><a href="#Table" class="slideM">BOOK A TABLES</a></button></div>
+       <!-- slider center text ending -->
+      <!-- <p class="dp">kamal Rajput</p> -->
+      <img src="gallery-2.jpg">
+      <img src="gallery-3.jpg">
+      <img src="gallery-4.jpg">
+      <img src="gallery-5.jpg">
+    </div>
+
+
+    <div class="indicator">
+      <span id="btn1" class="active"></span>
+      <span id="btn2"></span>
+      <span id="btn3"></span>
+      <span id="btn4"></span>
+      <span id="btn5"></span>
+
+    </div>
+  </div>
+  <script>
+    var slide = document.getElementById("figure");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+    var btn5 = document.getElementById("btn5");
+
+
+    btn1.onclick = function () {
+      slide.style.transform = "translateX(-0%)";
+      btn1.classList.add("active");
+      btn5.classList.remove("active");
+      btn2.classList.remove("active");
+      btn3.classList.remove("active");
+      btn4.classList.remove("active");
+
+    }
+    btn2.onclick = function () {
+      slide.style.transform = "translateX(-100%)";
+      btn2.classList.add("active");
+      btn1.classList.remove("active");
+      btn5.classList.remove("active");
+      btn3.classList.remove("active");
+      btn4.classList.remove("active");
+
+    }
+    btn3.onclick = function () {
+      slide.style.transform = "translateX(-200%)";
+      btn3.classList.add("active");
+      btn1.classList.remove("active");
+      btn2.classList.remove("active");
+      btn5.classList.remove("active");
+      btn4.classList.remove("active");
+
+    }
+    btn4.onclick = function () {
+      slide.style.transform = "translateX(-300%)";
+      btn4.classList.add("active");
+      btn1.classList.remove("active");
+      btn2.classList.remove("active");
+      btn3.classList.remove("active");
+      btn5.classList.remove("active");
+
+
+    }
+    btn5.onclick = function () {
+      slide.style.transform = "translateX(-400%)";
+      btn5.classList.add("active");
+      btn1.classList.remove("active");
+      btn2.classList.remove("active");
+      btn3.classList.remove("active");
+      btn4.classList.remove("active");
+
+
+    }</script>
+
+  <!-- End Slider -->
+  <!-- Start Gallery -->
+           <div class="video">
+                <h1 class="About" id="About">--------About-------</h1>
+                <img src="C:\xampp\htdocs\shahjaha\gallery-2.jpg" class="g1" alt=" video lost">
+            <div class="t1">
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <p class="p1"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Delectus distinctio quos numquam,<br>
+                    libero dolorem sapiente reprehenderit culpa illum perferendis magni consectetur, </label>
+                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br> Totam,<br>
+                    nostrum molestiae ad exercitationem earum<br> veritatis saepe optio quidem obcaecati adipisci nesciunt cum fugit
+                    ratione inventore,<br>
+                    vitae quia ipsum repudiandae blanditiis!
+                  </p><br>
+                  <p class="v2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Atque mollitia rem ipsam,<br> corrupti
+                    in dolore non placeat,<br> dolores cum praesentium sint deserunt quibusdam id optio culpa doloribus debitis,<br>
+                    minima libero!</p>
+            </div>
+    <div class="cheif">
+              <!-- <div class="cheif-header">
+                <h1 class="c1">--------Cheif-------</h1>
+              </div> -->
+
+              <input type="radio" name="photo" id="check1" checked>
+              <input type="radio" name="photo" id="check2">
+              <input type="radio" name="photo" id="check3">
+              <input type="radio" name="photo" id="check4">
+     
+
+          <div class="container">
+                <h1 class="k1" id="Gallery">
+                  OUR PHOTO GALLERY
+                </h1>
+                <div class="top-content">
+                  <h3>
+                    PHOTO GALLERY
+                  </h3>
+                  <label for="check1">All Photo </label>
+                 <label for="check2"><a href="#pic1"> Family</a></label>
+                 <label for="check3">Child photo</label>
+                  <label for="check4">Visited place</label>
+
+                 </div>
+                  
+                <div class="photo-gallery">
+                  <div  class="pic place"><img src="gallery-1.jpg" alt="">
+                  </div>
+                  <div class="pic family">
+                    <img src="gallery-2.jpg" alt="">
+                  </div>
+                  <div class="pic child">
+                    <img src="gallery-3.jpg" alt="">
+                  </div>
+                  <div class="pic family">
+                    <img src="gallery-4.jpg" alt="">
+                  </div>
+                  <div class="pic place">
+                    <img src="gallery-5.jpg" alt="">
+                  </div>
+                  <div class="pic child" id="pic1">
+                    <img src="gallery-3.jpg" alt="">
+                  </div>
+                  <div class="pic family">
+                    <img src="gallery-4.jpg" alt="">
+                  </div>
+                  <div class="pic place">
+                    <img src="gallery-5.jpg" alt="">
+                  </div>
+                  <div class="pic place">
+                    <img src="gallery-5.jpg" alt="">
+                  </div>
+                  <div class="pic child">
+                    <img src="gallery-3.jpg" alt="">
+                  </div>
+                  <div class="pic family">
+                    <img src="gallery-4.jpg" alt="">
+                  </div>
+                  <div class="pic child">
+                    <img src="gallery-5.jpg" alt="">
+                  </div>
+                </div>
+                 
+           </div>
+      <div class="list" id="Menu"> 
+        
+          
+           <div class="mena">
+            <ul class="ok">
+              
+              <li><a href="#">NonVeg</a></li>
+              <li><a href="#">Veg</a></li>
+              <li><a href="#">South</a></li>
+              <li><a href="#">Chinese</a></li></ul>
+        </div>
+      
+        <div class="menu" >
+                
+          <label class=" non kamal">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>230 Rs/-</b>
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non ray">Lorem ipsum dolor sit amet consectetur adipisicing elit.<b>230 Rs/-</b> 
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non rajput">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>230 Rs/-</b>
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non kamal">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>230 Rs/-</b>
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non ray">Lorem ipsum dolor sit amet consectetur adipisicing elit.<b>230 Rs/-</b> 
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non rajput">Lorem ipsum dolor sit amet consectetur adipisicing elit.<b>230 Rs/-</b> 
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non kamal">Lorem ipsum dolor sit amet consectetur adipisicing elit.<b>230 Rs/-</b> 
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non ray">Lorem ipsum dolor sit amet consectetur adipisicing elit.<b>230 Rs/-</b> 
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+          <label class=" non rajput">Lorem ipsum dolor sit amet consectetur adipisicing elit.<b>230 Rs/-</b> 
+            <l>Lorem, ipsum dolor sit amet consectetur</l></label> 
+      
+        </div>
+      </div>
+      <div class="table" id="Table">
+       
+        <form action="insert.php" method="POST" class="tablebook" >
+          
+            <h2>BOOK A TABLE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Ullam similique, quasi 
+            </p>
+                 <input type="text" name="sname"  placeholder="Your Name" class="name">
+                  
+                 <input type="email"  name="semail"  class="email" placeholder="Your Email">
+                 
+                <input type="text" name="sphone"   class="contact" placeholder="Your Phone Number" >
+                    
+                <input type="datetime" name="sdate"  class="date" placeholder="Date" >
+            
+                  <input type="time" name="stime"  class="time" placeholder="Time" > 
+                  <input type="number" name="speople"  class="people" placeholder="# Number of people" >
+                               
+                <input type="text" name="smessage"  placeholder="Message" style="width: 750px;  height: 150px;">
+                 <input type="submit" value="Book">
+                
+                </form>
+
+      </div>  
+    </div>    
+    <div class="cook" id="cook">
+        
+      <div class="bg-image"><img src="gallery-1.jpg" alt=""> </div>
+       <div class="headc">Our professional<h5 class="bhead">Cheif</h5></div>
+        <div class="chefs-pic">
+          <div  class="chefs"><img src="chefs\chefs-1.jpg" alt="">
+          </div>
+          <div class="chefs">
+            <img src="chefs\chefs-2.jpg" alt="">
+          </div>
+          <div class="chefs">
+            <img src="chefs\chefs-3.jpg" alt="">
+          </div>
+          </div>
+          
+                <div class="about-chefs">
+                  <div class="chefs1 left">
+                    <h5 style="font-size:18px; color: black;">Kamal raput</h5>
+                    <hr>
+                    <h5 style="font-size:18px;">Master seif</h5>
+                    <a href="#" class="twitter"></a>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="instagram"></a>
+                    <a href="#" class="google-plus"></a>
+                    <a href="#" class="linkedin"></a>
+                </div>
+                <div class="chefs1 left">
+                  <h5 style="font-size:18px; color: black;">Kamal raput</h5>
+                    <hr>
+                    <h5 style="font-size:18px;">Master seif</h5>
+                  <a href="#" class="twitter"></a>
+                  <a href="#" class="facebook"></a>
+                  <a href="#" class="instagram"></a>
+                  <a href="#" class="google-plus"></a>
+                  <a href="#" class="linkedin"></a>
+                </div>
+                <div class="chefs1 left">
+                  <h5 style="font-size:18px; color: black;">Kamal raput</h5>
+                    <hr>
+                    <h5 style="font-size:18px;">Master seif</h5>
+                  <a href="#" class="twitter"></a>
+                  <a href="#" class="facebook"></a>
+                  <a href="#" class="instagram"></a>
+                  <a href="#" class="google-plus"></a>
+                  <a href="#" class="linkedin"></a>
+                </div>
+      </div>
+    </div>
+    <div class="mycon" id="Contact">
+      <div class="bar ">
+        <ul class="location">
+        <a href="#" class="local"></a><li> location:<br>Shankar Nagar Raipur C.G</li>
+        <a href="#" class="local"></a><li> Open Hours:-<br>11:00 AM To 12:00 PM</li>
+        <a href="#" class="local"></a><li> Email : -<br>kamalrajput12122001@gmail.com</li>
+        <a href="#" class="local"></a><li> Call :-<br>9111526730<br>6265138284</li>
+        
+
+
+
+      </ul>
+    </div>
+      <div class="ta">
+        <center>
+        <h1><span style="color: orange;"> Contact</span>Us</h1>
+        <input type="text" placeholder="Your Name " name="">
+        <input type="text" placeholder="Your name" name="">
+        <br>
+        <input type="text" name="" placeholder="Your Subject" style="width: 805px;">
+        <br>
+        <input type="text" placeholder="Your Message for us" style="width: 805px; height: 150px;">
+        <br>
+        <input type="submit" value="Submit">
+      </center>
+      </div>
+
+    </div>   
+    
+    
+
+      <div id="footer">
+
+        <h3>Shajaha</h3>
+        <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.
+        </p>
+        <div class="social-links">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="instagram"></a>
+              <a href="#" class="google-plus"></a>
+              <a href="#" class="linkedin"></a>
+        </div>
+        <div class="copyright">
+              &copy; Copyright <strong><span>Shajaha</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+
+              Designed by <a href="#">Kamal Rajput Ray</a>
+        </div>
+
+          
+
+      </div>
+
+
+
+</body>
+
+
+</html>
